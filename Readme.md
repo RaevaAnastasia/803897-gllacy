@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Раева](https://up.htmlacademy.ru/htmlcss/23/user/803897).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
