@@ -111,51 +111,57 @@
 					</select>
 					<div class="filters-form-range">						
 						<p class="filters-title">Цена: 100 руб. – 500 руб.</p>
-						<div class="filters-form-range-line"></div>
-						<span class="filters-form-range-button" tabindex="0"></span>
-						<span class="filters-form-range-button" tabindex="0"></span>
+						<div class="filters-form-range-container">
+							<div class="filters-form-range-line"></div>
+							<span class="filters-form-range-button" tabindex="0"></span>
+							<span class="filters-form-range-button" tabindex="0"></span>
+						</div>
 					</div>					
 					<fieldset class="filters-form-radio">
 						<legend class="filters-title">Жирность:</legend>
-						<label class="filters-title-item">
-							<input class="filters-form-radio-item" type="radio" name="fat" value="0">
-							0%
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-radio-item" type="radio" name="fat" value="less10" checked>
-							до 10%
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-radio-item" type="radio" name="fat" value="less30">
-							до 30%
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-radio-item" type="radio" name="fat" value="more30">
-							выше 30%
-						</label>	
+						<div class="filters-form-radio-container">
+							<label class="filters-title-item">
+								<input class="filters-form-rado-item" type="radio" name="fat" value="0">
+								0%
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-radio-item" type="radio" name="fat" value="less10" checked>
+								до 10%
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-radio-item" type="radio" name="fat" value="less30">
+								до 30%
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-radio-item" type="radio" name="fat" value="more30">
+								выше 30%
+							</label>
+						</div>	
 					</fieldset>
 					<fieldset class="filters-form-checkbox">
 						<legend class="filters-title">Наполнители</legend>
-						<label class="filters-title-item">
-							<input class="filters-form-checkbox-item" type="checkbox" name="chocolate" checked>
-							шоколадные
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-checkbox-item" type="checkbox" name="sugar-topping" checked>
-							сахарные присыпки
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-checkbox-item" type="checkbox" name="fruits">
-							фрукты
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-checkbox-item" type="checkbox" name="syrups">
-							сиропы
-						</label>
-						<label class="filters-title-item">
-							<input class="filters-form-checkbox-item" type="checkbox" name="jams">
-							джемы
-						</label>						   
+						<div class="filters-form-checkbox-container">
+							<label class="filters-title-item">
+								<input class="filters-form-checkbox-item" type="checkbox" name="chocolate" checked>
+								шоколадные
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-checkbox-item" type="checkbox" name="sugar-topping" checked>
+								сахарные присыпки
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-checkbox-item" type="checkbox" name="fruits">
+								фрукты
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-checkbox-item" type="checkbox" name="syrups">
+								сиропы
+							</label>
+							<label class="filters-title-item">
+								<input class="filters-form-checkbox-item" type="checkbox" name="jams">
+								джемы
+							</label>
+						</div>						   
 					</fieldset>
 					<button class="filters-button" type="submit">Применить</button>
 				</form>
