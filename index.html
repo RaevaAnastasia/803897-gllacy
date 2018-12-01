@@ -9,63 +9,67 @@
   </head>
   <body>
   	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo">
-  				<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
-  			</a>
-  			<ul class="site-navigation">
-  				<li class="site-navigation-item">
-                    <a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
-                    <ul class="site-navigation-item-nested dropdown">
-                        <li class="dropdown-item">
-                            <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-item-link" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
-                        </li>              
-                    </ul>
-                </li>
-  				<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
-  				<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
-  			</ul>
-  			<section class="main-header-search">                
-                <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
-                    <p>
-                        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                        <input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
-                    </p>
-                </form>
-            </section>
-        <section class="main-header-login">
-          <h2 class="visually-hidden">Ваша учетная запись</h2> 
-          <a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
-          <form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
-            <p class="main-header-login-field">
-              <label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
-              <input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-            </p>
-            <p class="main-header-login-field">
-              <label class="visually-hidden" for="user-password">Введите пароль</label>
-              <input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="main-header-login-info">
-              <a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
-              <a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
-            </p>
-            <button class="button" type="submit">Вход</button>          
-          </form>
-        </section>       
-        <span class="main-header-basket">Пусто</span>
-  		</nav>  		
+      <div class="container">
+    		<nav class="main-navigation">
+    			<a class="main-header-logo">
+    				<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
+    			</a>
+    			<ul class="site-navigation">
+    				<li class="site-navigation-item">
+                      <a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
+                      <ul class="site-navigation-item-nested dropdown">
+                          <li class="dropdown-item">
+                              <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a class="dropdown-item-link" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
+                          </li>              
+                      </ul>
+                  </li>
+    				<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
+    				<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
+    			</ul>
+          <div class="main-header-wrapper">
+      			<section class="main-header-search">                
+                    <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
+                        <p>
+                            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                            <input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
+                        </p>
+                    </form>
+                </section>
+            <section class="main-header-login">
+              <h2 class="visually-hidden">Ваша учетная запись</h2> 
+              <a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
+              <form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
+                <p class="main-header-login-field">
+                  <label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
+                  <input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                </p>
+                <p class="main-header-login-field">
+                  <label class="visually-hidden" for="user-password">Введите пароль</label>
+                  <input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <p class="main-header-login-info">
+                  <a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
+                  <a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
+                </p>
+                <button class="button" type="submit">Вход</button>          
+              </form>
+            </section>       
+            <span class="main-header-basket">Пусто</span>
+          </div>
+    		</nav>
+      </div>  		
   	</header>
   	<main class="container">  		
       <p class="work-time">
@@ -176,26 +180,28 @@
         <p class="page-title-desc">— это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
   			<ul class="features-list">
   				<li class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-  				<li class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
-  				<li class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-  				<li class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li> 		
-  			</ul>
+          <li class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+  				<li class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>  				
+  				<li class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>			
+        </ul>
   		</section>
-  		<section class="news-preview">
-  			<h2 class="news-preview-title">Новое в нашем блоге</h2>
-  			<a class="news-preview-link" href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
-  		</section>
-  		<section class="subscribtion">
-  			<h2 class="visually-hidden">Подписка на рассылку</h2>
-  			<p class="subscribtion-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscribtion-form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="subscribtion-form-email">
-            <label class="visually-hidden" for="subscribtion-email">Введите электронную почту</label>
-            <input class="subscribtion-field-email" id="subscribtion-email" type="email" name="subscribtion-email" placeholder="Электронная почта">
-          </p>
-          <button class="button" type="submit">Отправить</button>          
-        </form>
-  		</section>
+      <div class="news-subscription-wrapper">
+    		<section class="news-preview">
+    			<h2 class="news-preview-title">Новое в нашем блоге</h2>
+    			<a class="news-preview-link" href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
+    		</section>
+    		<section class="subscribtion">
+    			<h2 class="visually-hidden">Подписка на рассылку</h2>
+    			<p class="subscribtion-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscribtion-form" method="post" action="https://echo.htmlacademy.ru">
+            <p class="subscribtion-form-email">
+              <label class="visually-hidden" for="subscribtion-email">Введите электронную почту</label>
+              <input class="subscribtion-field-email" id="subscribtion-email" type="email" name="subscribtion-email" placeholder="Электронная почта">
+            </p>
+            <button class="button" type="submit">Отправить</button>          
+          </form>
+    		</section>
+      </div>
       <div class="contacts">        
         <img src="img/map.jpg" alt="Адрес магазина: г.Санкт-Петербург, ул.Большая Конюшенная, 19/8" width="1200" height="430">
         <section class="contacts-info">
@@ -205,25 +211,28 @@
         </section>
       </div>  		 
   	</main>
-  	<footer class="main-footer">
-  		<div class="footer-social">
-  			<ul class="social-list">
-  				<li class="social-item"><a class="social-button" href="https://twitter.com" aria-label="Перейти на страницу Gllacy Shop в Твитере">Twitter</a></li>
-  				<li class="social-item"><a class="social-button" href="https://www.instagram.com" aria-label="Перейти на страницу Gllacy Shop в Инстаграме">Instagram</a></li>
-  				<li class="social-item"><a class="social-button" href="https://ru-ru.facebook.com" aria-label="Перейти на страницу Gllacy Shop на Фэйсбуке">Facebook</a></li>
-  				<li class="social-item"><a class="social-button" href="https://vk.com" aria-label="Перейти на страницу Gllacy Shop Вконтакте">VK</a></li>
-  			</ul>  			
-  		</div>
+  	<footer class="main-footer container">  		 
+			<ul class="social-list">
+				<li class="social-item"><a class="social-button" href="https://twitter.com" aria-label="Перейти на страницу Gllacy Shop в Твитере">Twitter</a></li>
+				<li class="social-item"><a class="social-button" href="https://www.instagram.com" aria-label="Перейти на страницу Gllacy Shop в Инстаграме">Instagram</a></li>
+				<li class="social-item"><a class="social-button" href="https://ru-ru.facebook.com" aria-label="Перейти на страницу Gllacy Shop на Фэйсбуке">Facebook</a></li>
+				<li class="social-item"><a class="social-button" href="https://vk.com" aria-label="Перейти на страницу Gllacy Shop Вконтакте">VK</a></li>
+			</ul>   		 
   		<ul class="footer-navigation">
-  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
-  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>
-  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
-  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
+        <div class="footer-wrapper"> 
+          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
+          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>
+        </div>
+        <div class="footer-wrapper">  			
+    			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
+    			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
+        </div>
   		</ul>
   		<p class="footer-copyright">
   			Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2018
   		</p>
   	</footer>
+
     <section class="feedback">
       <h2>Мы обязательно вам ответим!</h2>
       <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">

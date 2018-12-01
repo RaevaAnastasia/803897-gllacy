@@ -9,96 +9,100 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу">
-					<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
-				</a>
-				<ul class="site-navigation">
-  					<li class="site-navigation-item site-navigation-item-current">
-		            	<a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
-		            	<ul class="site-navigation-item-nested dropdown">
-			              <li class="dropdown-item">
-			                <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
-			              </li>
-			              <li class="dropdown-item">
-			                <a class="dropdown-item-link dropdown-item-link-current" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
-			              </li>
-			              <li class="dropdown-item">
-			                <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
-			              </li>
-			              <li class="dropdown-item">
-			                <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
-			              </li>
-			              <li class="dropdown-item">
-			                <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
-			              </li>              
-			            </ul>
-		          	</li>
-		  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
-		  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
-		  		</ul>
-		  		<section class="main-header-search">
-		  			<form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
-		  				<p>
-		  					<label class="visually-hidden" for="search-field">Поиск по сайту</label>
-		  					<input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
-		            	</p>
-		            </form>
-		        </section>
-		        <section class="main-header-login">
-		        	<h2 class="visually-hidden">Ваша учетная запись</h2> 
-	          		<a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
-	          		<form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
-	            		<p class="main-header-login-field">
-	              			<label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
-	              			<input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-	            		</p>
-	            		<p class="main-header-login-field">
-	              			<label class="visually-hidden" for="user-password">Введите пароль</label>
-	              			<input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
-	            		</p>
-	            		<p class="main-header-login-info">
-	              			<a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
-	              			<a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
-	            		</p>
-	            		<button class="button" type="submit">Вход</button>          
-	          		</form>
-		        </section>       
-		        <span class="main-header-basket-filled">2 товара</span>
-				<section class="basket-filled-content dropdown">					
-					<h2 class="visually-hidden">Товары в корзине</h2>
-					<table class="basket-filled-content-table">
-						<tr class="basket-filled-content-table-row">
-							<td class="basket-filled-content-table-column-1"><button class="close" type="button">Удалить из корзины</button></td>
-							<td class="basket-filled-content-table-column-2">Пломбир с апельсиновым джемом</td>
-							<td class="basket-filled-content-table-column-3">1,5 кг х <span class="price">200 руб.</span></td>
-							<td class="basket-filled-content-table-column-4">300 руб.</td>
-						</tr>
-						<tr class="basket-filled-content-table-row">
-							<td class="basket-filled-content-table-column-1"><button class="close" type="button">Удалить из корзины</button></td>
-							<td class="basket-filled-content-table-column-2">Клубничный пломбир с присыпкой из белого шоколада</td>
-							<td class="basket-filled-content-table-column-3">1,5 кг х <span class="price">300 руб.</span></td>
-							<td class="basket-filled-content-table-column-4">450 руб.</td>
-						</tr>
-						<tr class="basket-filled-content-table-row">
-							<td class="basket-filled-content-table-amount" colspan="4">Итого: 750 руб.</td>
-						</tr>
-					</table>						
-					<a class="button" href="order.html">Оформить заказ</a>									
-				</section>
-			</nav>
+			<div class="container">
+				<nav class="main-navigation">
+					<a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу">
+						<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
+					</a>
+					<ul class="site-navigation">
+	  					<li class="site-navigation-item site-navigation-item-current">
+			            	<a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
+			            	<ul class="site-navigation-item-nested dropdown">
+				              <li class="dropdown-item">
+				                <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
+				              </li>
+				              <li class="dropdown-item">
+				                <a class="dropdown-item-link dropdown-item-link-current" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
+				              </li>
+				              <li class="dropdown-item">
+				                <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
+				              </li>
+				              <li class="dropdown-item">
+				                <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
+				              </li>
+				              <li class="dropdown-item">
+				                <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
+				              </li>              
+				            </ul>
+			          	</li>
+			  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
+			  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
+			  		</ul>
+			  		<section class="main-header-search">
+			  			<form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
+			  				<p>
+			  					<label class="visually-hidden" for="search-field">Поиск по сайту</label>
+			  					<input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
+			            	</p>
+			            </form>
+			        </section>
+			        <section class="main-header-login">
+			        	<h2 class="visually-hidden">Ваша учетная запись</h2> 
+		          		<a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
+		          		<form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
+		            		<p class="main-header-login-field">
+		              			<label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
+		              			<input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+		            		</p>
+		            		<p class="main-header-login-field">
+		              			<label class="visually-hidden" for="user-password">Введите пароль</label>
+		              			<input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
+		            		</p>
+		            		<p class="main-header-login-info">
+		              			<a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
+		              			<a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
+		            		</p>
+		            		<button class="button" type="submit">Вход</button>          
+		          		</form>
+			        </section>       
+			        <span class="main-header-basket-filled">2 товара</span>
+					<section class="basket-filled-content dropdown">					
+						<h2 class="visually-hidden">Товары в корзине</h2>
+						<table class="basket-filled-content-table">
+							<tr class="basket-filled-content-table-row">
+								<td class="basket-filled-content-table-column-1"><button class="close" type="button">Удалить из корзины</button></td>
+								<td class="basket-filled-content-table-column-2">Пломбир с апельсиновым джемом</td>
+								<td class="basket-filled-content-table-column-3">1,5 кг х <span class="price">200 руб.</span></td>
+								<td class="basket-filled-content-table-column-4">300 руб.</td>
+							</tr>
+							<tr class="basket-filled-content-table-row">
+								<td class="basket-filled-content-table-column-1"><button class="close" type="button">Удалить из корзины</button></td>
+								<td class="basket-filled-content-table-column-2">Клубничный пломбир с присыпкой из белого шоколада</td>
+								<td class="basket-filled-content-table-column-3">1,5 кг х <span class="price">300 руб.</span></td>
+								<td class="basket-filled-content-table-column-4">450 руб.</td>
+							</tr>
+							<tr class="basket-filled-content-table-row">
+								<td class="basket-filled-content-table-amount" colspan="4">Итого: 750 руб.</td>
+							</tr>
+						</table>						
+						<a class="button" href="order.html">Оформить заказ</a>									
+					</section>
+				</nav>
+			</div>
 		</header>
 		<main class="container">
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs-item"><a href="index.html" aria-label="Вернуться на главную страницу">Главная</a></li>
-				<li class="breadcrumbs-item"><a href="common-catalog.html" aria-label="Вернуться в Каталог">Каталог</a></li>
-				<li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-			</ul>
-			<h1 class="page-title-inner">Сливочное мороженое</h1>
-			<p class="work-time">
-				С 10 до 20, ежедневно
-				<span class="phone-number">8 812 450-25-25</span>
-			</p>
+			<div class="main-top-wrapper">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item"><a href="index.html" aria-label="Вернуться на главную страницу">Главная</a></li>
+					<li class="breadcrumbs-item"><a href="common-catalog.html" aria-label="Вернуться в Каталог">Каталог</a></li>
+					<li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
+				</ul>
+				<p class="work-time">
+					С 10 до 20, ежедневно
+					<span class="phone-number">8 812 450-25-25</span>
+				</p>
+			</div>
+			<h1 class="page-title-inner">Сливочное мороженое</h1>			
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
@@ -361,7 +365,7 @@
 				</ul>
 			</section>
 		</main>
-	  	<footer class="main-footer">
+	  	<footer class="main-footer container">
 	  		<div class="footer-social">
 	  			<ul class="social-list">
 	  				<li class="social-item"><a class="social-button" href="https://twitter.com" aria-label="Перейти на страницу Gllacy Shop в Твитере">Twitter</a></li>
@@ -371,11 +375,15 @@
 	  			</ul>  			
 	  		</div>
 	  		<ul class="footer-navigation">
-	  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
-	  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>
-	  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
-	  			<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
-	  		</ul>
+		        <div class="footer-wrapper"> 
+		          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
+		          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>
+		        </div>
+		        <div class="footer-wrapper">  			
+		    		<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
+		    		<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
+		        </div>
+		  	</ul>
 	  		<p class="footer-copyright">
 	  			Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2018
 	  		</p>
