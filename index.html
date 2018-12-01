@@ -8,68 +8,66 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="main-header">
-      <div class="container">
-    		<nav class="main-navigation">
-    			<a class="main-header-logo">
-    				<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
-    			</a>
-    			<ul class="site-navigation">
-    				<li class="site-navigation-item">
-                      <a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
-                      <ul class="site-navigation-item-nested dropdown">
-                          <li class="dropdown-item">
-                              <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
-                          </li>
-                          <li class="dropdown-item">
-                              <a class="dropdown-item-link" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
-                          </li>
-                          <li class="dropdown-item">
-                              <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
-                          </li>
-                          <li class="dropdown-item">
-                              <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
-                          </li>
-                          <li class="dropdown-item">
-                              <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
-                          </li>              
-                      </ul>
-                  </li>
-    				<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
-    				<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
-    			</ul>
-          <div class="main-header-wrapper">
-      			<section class="main-header-search">                
-                    <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
-                        <p>
-                            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                            <input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
-                        </p>
-                    </form>
-                </section>
-            <section class="main-header-login">
-              <h2 class="visually-hidden">Ваша учетная запись</h2> 
-              <a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
-              <form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
-                <p class="main-header-login-field">
-                  <label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
-                  <input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-                </p>
-                <p class="main-header-login-field">
-                  <label class="visually-hidden" for="user-password">Введите пароль</label>
-                  <input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <p class="main-header-login-info">
-                  <a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
-                  <a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
-                </p>
-                <button class="button" type="submit">Вход</button>          
-              </form>
-            </section>       
-            <span class="main-header-basket">Пусто</span>
-          </div>
-    		</nav>
-      </div>  		
+  	<header class="main-header container">      
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
+  				<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
+  			</a>
+  			<ul class="site-navigation">
+  				<li class="site-navigation-item">
+                    <a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
+                    <ul class="site-navigation-item-nested dropdown">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item-link" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
+                        </li>              
+                    </ul>
+                </li>
+  				<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
+  				<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
+  			</ul>
+        <div class="main-header-wrapper">
+    			<section class="main-header-search">                
+                  <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
+                      <p>
+                          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                          <input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
+                      </p>
+                  </form>
+              </section>
+          <section class="main-header-login">
+            <h2 class="visually-hidden">Ваша учетная запись</h2> 
+            <a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
+            <form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
+              <p class="main-header-login-field">
+                <label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
+                <input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+              </p>
+              <p class="main-header-login-field">
+                <label class="visually-hidden" for="user-password">Введите пароль</label>
+                <input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p class="main-header-login-info">
+                <a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
+                <a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Вход</button>          
+            </form>
+          </section>       
+          <span class="main-header-basket">Пусто</span>
+        </div>
+  		</nav>        		
   	</header>
   	<main class="container">  		
       <p class="work-time">
@@ -91,7 +89,9 @@
           <h3 class="slide-desc">Пломбир с помадкой и клубничный щербет</h3>
           <img class="slide-img" src="img/slide-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">           
           <a class="slide-button button" href="#">Давайте оба!</a>
-        </section>
+        </section>        
+      </div>
+      <div class="slider-switchers">
         <label class="visually-hidden" for="slider-switch-1">Переключить на первый фоновый слайд</label>
         <input class="slider-switch" id="slider-switch-1" type="radio" name="switch" checked>
         <label class="visually-hidden" for="slider-switch-2">Переключить на второй фоновый слайд</label>
@@ -129,6 +129,7 @@
                 310&#8381;
                 <span class="weight-text">/кг</span>              
               </p>
+              <a class="button quick-view-button" href="#">Быстрый просмотр</a>
             </article>      
           </li>
           <li class="catalog-item">
@@ -143,6 +144,7 @@
                 380&#8381;
                 <span class="weight-text">/кг</span>              
               </p>
+              <a class="button quick-view-button" href="#">Быстрый просмотр</a>
             </article>            
           </li>
           <li class="catalog-item">
@@ -157,6 +159,7 @@
                 355&#8381;
                 <span class="weight-text">/кг</span>              
               </p>
+              <a class="button quick-view-button" href="#">Быстрый просмотр</a>
             </article>
           </li>
           <li class="catalog-item">
@@ -171,6 +174,7 @@
                 415&#8381;
                 <span class="weight-text">/кг</span>              
               </p>
+              <a class="button quick-view-button" href="#">Быстрый просмотр</a>
             </article>            
           </li>
         </ul>

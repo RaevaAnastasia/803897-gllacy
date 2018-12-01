@@ -21,6 +21,11 @@ body {
 	list-style: none;
 }
 
+.dropdown,
+.feedback {
+	display: none;
+}
+
 .site-navigation-item-link {
 	line-height: 18px;
 	color: #ffffff;
@@ -315,7 +320,11 @@ body {
 	text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
-.site-navigation-item-current a,
+.site-navigation-item-current {
+	background-color: #d07058;
+	color: #ffffff;
+}
+
 .dropdown-item-link-current {
 	background-color: #d07058;
 	color: #ffffff;
@@ -413,8 +422,33 @@ body {
 	color: #323232;
 } 
 
-.dropdown,
-.feedback {
+
+
+.site-navigation-item:first-child:hover .dropdown {
+	display: block;
+	width: 143px;
+	box-sizing: border-box;
+	background-color: #f7f6f3;
+}
+
+
+.site-navigation-item-nested {
+	margin: 0;
+	padding: 0;
+}
+
+
+.main-header-search:hover .dropdown {
+	display: block;
+}
+
+.main-header-login:hover .dropdown {
+	display: block;
+	width: 277px;	
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
 	display: none;
 }
 
@@ -613,6 +647,7 @@ body {
 .visually-hidden {
 	position: absolute;
 
+	font-size: 0;
   	width: 1px;
   	height: 1px;
   	margin: -1px;
@@ -654,6 +689,7 @@ body {
 	padding-right: 33px;
 	padding-bottom: 26px;
 	padding-left: 21px;	 
+	border-radius: 15px;
 }
 
 .page-title {
@@ -701,6 +737,7 @@ body {
 .subscribtion {
 	width: 560px;
 	height: 220px;
+	border-radius: 15px;
 }
 
 .contacts img {
@@ -742,6 +779,12 @@ body {
 	height: 32px;
 	margin-top: 14px;
 	margin-left: 9px;
+
+}
+
+.main-header-basket-filled:hover .dropdown  {
+	display: block;
+	width: 540px;
 }
 
 .breadcrumbs {
@@ -799,4 +842,12 @@ body {
 
 .catalog-item:nth-child(4n) {
 	margin-right: 0;
+}
+
+.quick-view-button {
+	display: none;
+}
+
+.catalog-item:hover .quick-view-button {
+	display: block;
 }

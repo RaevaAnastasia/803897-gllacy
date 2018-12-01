@@ -8,64 +8,63 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<nav class="main-navigation">
-					<a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу">
-						<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
-					</a>
-					<ul class="site-navigation">
-	  					<li class="site-navigation-item site-navigation-item-current">
-			            	<a class="site-navigation-item-link" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
-			            	<ul class="site-navigation-item-nested dropdown">
-				              <li class="dropdown-item">
-				                <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
-				              </li>
-				              <li class="dropdown-item">
-				                <a class="dropdown-item-link dropdown-item-link-current" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
-				              </li>
-				              <li class="dropdown-item">
-				                <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
-				              </li>
-				              <li class="dropdown-item">
-				                <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
-				              </li>
-				              <li class="dropdown-item">
-				                <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
-				              </li>              
-				            </ul>
-			          	</li>
-			  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
-			  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
-			  		</ul>
-			  		<section class="main-header-search">
-			  			<form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
-			  				<p>
-			  					<label class="visually-hidden" for="search-field">Поиск по сайту</label>
-			  					<input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
-			            	</p>
-			            </form>
-			        </section>
-			        <section class="main-header-login">
-			        	<h2 class="visually-hidden">Ваша учетная запись</h2> 
-		          		<a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
-		          		<form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
-		            		<p class="main-header-login-field">
-		              			<label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
-		              			<input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-		            		</p>
-		            		<p class="main-header-login-field">
-		              			<label class="visually-hidden" for="user-password">Введите пароль</label>
-		              			<input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
-		            		</p>
-		            		<p class="main-header-login-info">
-		              			<a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
-		              			<a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
-		            		</p>
-		            		<button class="button" type="submit">Вход</button>          
-		          		</form>
-			        </section>       
-			        <span class="main-header-basket-filled">2 товара</span>
+		<header class="main-header container">			 
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу">
+					<img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина мороженного Gllacy Shop">
+				</a>
+				<ul class="site-navigation">
+  					<li class="site-navigation-item">
+		            	<a class="site-navigation-item-link site-navigation-item-current" href="common-catalog.html" aria-label="Перейти в Каталог мороженого">Каталог</a>
+		            	<ul class="site-navigation-item-nested dropdown">
+			              <li class="dropdown-item">
+			                <a class="dropdown-item-link" href="new-product.html" aria-label="Перейти в раздел Новинки">Новинки</a>
+			              </li>
+			              <li class="dropdown-item">
+			                <a class="dropdown-item-link dropdown-item-link-current" href="catalog.html" aria-label="Перейти в раздел сливочное мороженое">Сливочное</a>
+			              </li>
+			              <li class="dropdown-item">
+			                <a class="dropdown-item-link" href="sorbets.html" aria-label="Перейти в раздел Щербеты">Щербеты</a>
+			              </li>
+			              <li class="dropdown-item">
+			                <a class="dropdown-item-link" href="fruit-ice.html" aria-label="Перейти в раздел Фруктовый лед">Фруктовый лед</a>
+			              </li>
+			              <li class="dropdown-item">
+			                <a class="dropdown-item-link" href="melorin.html" aria-label="Перейти в раздел Мелорин">Мелорин</a>
+			              </li>              
+			            </ul>
+		          	</li>
+		  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="purchase.html" aria-label="Перейти в раздел Доставка и оплата">Доставка и оплата</a></li>
+		  			<li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li> 				
+		  		</ul>
+		  		<section class="main-header-search">
+		  			<form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
+		  				<p>
+		  					<label class="visually-hidden" for="search-field">Поиск по сайту</label>
+		  					<input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
+		            	</p>
+		            </form>
+		        </section>
+		        <section class="main-header-login">
+		        	<h2 class="visually-hidden">Ваша учетная запись</h2> 
+	          		<a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
+	          		<form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
+	            		<p class="main-header-login-field">
+	              			<label class="visually-hidden" for="user-email">Введите адрес электронной почты</label>
+	              			<input class="main-header-login-field-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+	            		</p>
+	            		<p class="main-header-login-field">
+	              			<label class="visually-hidden" for="user-password">Введите пароль</label>
+	              			<input class="main-header-login-field-password" id="user-password" type="password" name="password" placeholder="Пароль">
+	            		</p>
+	            		<p class="main-header-login-info">
+	              			<a class="main-header-login-info-restore" href="#">Забыли пароль?</a>
+	              			<a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
+	            		</p>
+	            		<button class="button" type="submit">Вход</button>          
+	          		</form>
+		        </section>       
+		        <div class="main-header-basket-filled">2 товара
 					<section class="basket-filled-content dropdown">					
 						<h2 class="visually-hidden">Товары в корзине</h2>
 						<table class="basket-filled-content-table">
@@ -87,8 +86,8 @@
 						</table>						
 						<a class="button" href="order.html">Оформить заказ</a>									
 					</section>
-				</nav>
-			</div>
+				</div>
+			</nav>		 
 		</header>
 		<main class="container">
 			<div class="main-top-wrapper">
@@ -106,13 +105,16 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
-					<label class="filters-title" for="filters-form-select">Сортировка:</label>
-					<select class="filters-form-select" id="filters-form-select" name="sort-type">
-						<option value="popular">по популярности</option>
-						<option value="cheap">сначала недорогие</option>
-						<option value="expensive">сначала дорогие</option>
-						<option value="fat">по жирности</option>
-					</select>
+					<label class="filters-title" for="filters-form-select">Сортировка:
+						<p class="select-wrapper"> <!-- использую для переноса строки -->
+							<select class="filters-form-select" id="filters-form-select" name="sort-type">
+								<option value="popular">по популярности</option>
+								<option value="cheap">сначала недорогие</option>
+								<option value="expensive">сначала дорогие</option>
+								<option value="fat">по жирности</option>
+							</select>
+						</p>
+					</label>
 					<div class="filters-form-range">						
 						<p class="filters-title">Цена: 100 руб. – 500 руб.</p>
 						<div class="filters-form-range-container">
@@ -185,7 +187,7 @@
 									310&#8381;
 									<span class="weight-text">/кг</span>
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -200,7 +202,7 @@
 									380&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -215,7 +217,7 @@
 									355&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -230,7 +232,7 @@
 									415&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -245,7 +247,7 @@
 									325&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -260,7 +262,7 @@
 									410&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -275,7 +277,7 @@
 									375&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -290,7 +292,7 @@
 									320&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -305,7 +307,7 @@
 									440&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -320,7 +322,7 @@
 									435&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -335,7 +337,7 @@
 									355&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>
 						<li class="catalog-item">
@@ -350,7 +352,7 @@
 									420&#8381;
 									<span class="weight-text">/кг</span>							
 								</p>
-								<a class="button" href="#">Быстрый просмотр</a>
+								<a class="button quick-view-button" href="#">Быстрый просмотр</a>
 							</article>						
 						</li>					
 					</ul>				
