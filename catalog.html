@@ -91,11 +91,13 @@
 		</header>
 		<main class="container">
 			<div class="main-top-wrapper">
-				<ul class="breadcrumbs">
-					<li class="breadcrumbs-item"><a href="index.html" aria-label="Вернуться на главную страницу">Главная</a></li>
-					<li class="breadcrumbs-item"><a href="common-catalog.html" aria-label="Вернуться в Каталог">Каталог</a></li>
-					<li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-				</ul>
+				<nav aria-label="Навигация по сайту">					
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs-item"><a href="index.html" aria-label="Вернуться на главную страницу">Главная</a></li>
+						<li class="breadcrumbs-item"><a href="common-catalog.html" aria-label="Вернуться в Каталог">Каталог</a></li>
+						<li class="breadcrumbs-item breadcrumbs-current" aria-label="Вы находиться здесь:">Сливочное</li>
+					</ul>
+				</nav>
 				<p class="work-time">
 					С 10 до 20, ежедневно
 					<span class="phone-number">8 812 450-25-25</span>
@@ -118,6 +120,7 @@
 					<div class="filters-form-range">						
 						<p class="filters-title">Цена: 100 руб. – 500 руб.</p>
 						<div class="filters-form-range-container">
+							<div class="filters-form-range-line-common"></div>
 							<div class="filters-form-range-line"></div>
 							<span class="filters-form-range-button" tabindex="0"></span>
 							<span class="filters-form-range-button" tabindex="0"></span>
@@ -174,7 +177,7 @@
 			</section>
 			<section class="catalog-box">
 				<h2 class="visually-hidden">Виды сливочного мороженого</h2>				
-					<ul class="catalog-list">
+					<ul class="catalog-list catalog-list-inner">
 						<li class="catalog-item">
 							<article class="catalog-item-content">								
 								<h3 class="catalog-item-title"><a class="catalog-item-title-link" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>

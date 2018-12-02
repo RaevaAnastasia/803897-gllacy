@@ -422,8 +422,6 @@ body {
 	color: #323232;
 } 
 
-
-
 .site-navigation-item:first-child:hover .dropdown {
 	display: block;
 	width: 143px;
@@ -431,18 +429,17 @@ body {
 	background-color: #f7f6f3;
 }
 
-
 .site-navigation-item-nested {
 	margin: 0;
 	padding: 0;
 }
 
-
 .main-header-search:hover .dropdown {
 	display: block;
 }
 
-.main-header-login:hover .dropdown {
+.main-header-login:hover .dropdown,
+.main-header-login:focus .dropdown {
 	display: block;
 	width: 277px;	
 }
@@ -828,10 +825,13 @@ body {
 
 .catalog-list {
 	margin: 0;
-	padding: 0;
-	margin-bottom: 80px;
+	padding: 0;	
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+}
+
+.catalog-list-inner {
+	margin-bottom: 80px;
 }
 
 .catalog-item {
@@ -850,4 +850,139 @@ body {
 
 .catalog-item:hover .quick-view-button {
 	display: block;
+}
+
+.promo-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo-item {
+	width: 560px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.promo-item-title {
+	padding: 0;
+	margin: 0;
+}
+
+.promo-item-desc {
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+.catalog-item-image {
+	padding: 0;
+	margin: 0;		 
+}
+
+.catalog-item-image-link img {
+	border-radius: 50%;
+}
+
+.contacts-info {
+	width: 302px;
+	height: 305px;
+	border-radius: 15px;
+	padding: 30px 25px;
+	box-sizing: border-box;
+}
+
+.contacts-info-adress,
+.contacts-info-tel {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.contacts-adress,
+.contacts-tel {
+	display: block;
+}
+
+.pagination-list {
+	padding: 0;
+	padding-bottom: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;	
+	border-bottom: 1px solid rgba( 255, 255, 255, 0.3); 
+}
+
+.pagination-item  {
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+}
+
+.filters {
+	margin-bottom: 40px;
+}
+
+.filters-form {
+	width: 865px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.filters-form-select {
+	width: 195px;	
+}
+
+.filters-form-range {
+	margin: 0;
+	padding: 0;
+}
+
+.filters-form-range-container {
+	width: 220px;
+	height: 37px;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+	border: 1px solid transparent;	 
+}
+
+.filters-form-range-line-common {
+	width: 176px;
+	height: 4px;
+	background-color: rgba(248, 247, 244, 0.5);
+	margin: auto;
+	margin-top: 17px;
+} 
+
+.filters-form-radio {
+	margin: 0;
+	padding: 0;
+}
+
+.filters-form-radio-container {
+	width: 415px;
+}
+
+.filters-form-checkbox-container {
+	width: 703px;
+}
+
+.filters-title {
+	margin: 0;
+	padding: 0;
+}
+
+.filters-form-checkbox {
+	margin: 0;
+	padding: 0;
+}
+
+.select-wrapper {
+	padding: 0;
+	margin: 0;
 }
