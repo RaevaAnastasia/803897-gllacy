@@ -46,7 +46,7 @@
 		            	</p>
 		            </form>
 		        </section>
-		        <section class="main-header-login">
+		        <section class="main-header-login" tabindex="0">
 		        	<h2 class="visually-hidden">Ваша учетная запись</h2> 
 	          		<a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
 	          		<form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
@@ -88,7 +88,11 @@
 						<a class="button" href="order.html">Оформить заказ</a>									
 					</section>
 				</div>
-			</nav>		 
+			</nav>
+			<p class="work-time">
+				С 10 до 20, ежедневно
+				<span class="phone-number">8 812 450-25-25</span>
+			</p>			 
 		</header>
 		<main class="container">			
 			<nav aria-label="Навигация по сайту">					
@@ -97,25 +101,20 @@
 					<li class="breadcrumbs-item"><a href="common-catalog.html" aria-label="Вернуться в Каталог">Каталог</a></li>
 					<li class="breadcrumbs-item breadcrumbs-current" aria-label="Вы находиться здесь:">Сливочное</li>
 				</ul>
-			</nav>
-			<p class="work-time">
-				С 10 до 20, ежедневно
-				<span class="phone-number">8 812 450-25-25</span>
-			</p>			 
+			</nav>			
 			<h1 class="page-title-inner">Сливочное мороженое</h1>			
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
-					<label class="filters-title" for="filters-form-select">Сортировка:
-						<p class="select-wrapper"> <!-- использую для переноса строки -->
-							<select class="filters-form-select" id="filters-form-select" name="sort-type">
-								<option value="popular">по популярности</option>
-								<option value="cheap">сначала недорогие</option>
-								<option value="expensive">сначала дорогие</option>
-								<option value="fat">по жирности</option>
-							</select>
-						</p>
-					</label>
+					<div class="filters-form-select-container">
+						<label class="filters-title" for="filters-form-select">Сортировка:</label>			
+						<select class="filters-form-select" id="filters-form-select" name="sort-type">
+							<option value="popular">по популярности</option>
+							<option value="cheap">сначала недорогие</option>
+							<option value="expensive">сначала дорогие</option>
+							<option value="fat">по жирности</option>
+						</select>
+					</div>					
 					<div class="filters-form-range">						
 						<p class="filters-title">Цена: 100 руб. – 500 руб.</p>
 						<div class="filters-form-range-container">
@@ -127,48 +126,30 @@
 					</div>					
 					<fieldset class="filters-form-radio">
 						<legend class="filters-title">Жирность:</legend>
-						<div class="filters-form-radio-container">
-							<label class="filters-title-item">
-								<input class="filters-form-rado-item" type="radio" name="fat" value="0">
-								0%
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-radio-item" type="radio" name="fat" value="less10" checked>
-								до 10%
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-radio-item" type="radio" name="fat" value="less30">
-								до 30%
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-radio-item" type="radio" name="fat" value="more30">
-								выше 30%
-							</label>
+						<div class="filters-form-radio-container">							
+							<input class="filters-form-radio-item" type="radio" id="radio-0" name="fat" value="0">
+							<label class="filters-title-item-radio" for="radio-0">0%</label>				
+							<input class="filters-form-radio-item" type="radio" id="radio-less10" name="fat" value="less10" checked>
+							<label class="filters-title-item-radio" for="radio-less10">до 10%</label>		
+							<input class="filters-form-radio-item" type="radio" id="radio-less30" name="fat" value="less30">
+							<label class="filters-title-item-radio" for="radio-less30">до 30%</label>		
+							<input class="filters-form-radio-item" id="radio-more30" type="radio" name="fat" value="more30">
+							<label class="filters-title-item-radio" for="radio-more30">выше 30%</label>		
 						</div>	
 					</fieldset>
 					<fieldset class="filters-form-checkbox">
 						<legend class="filters-title">Наполнители</legend>
-						<div class="filters-form-checkbox-container">
-							<label class="filters-title-item">
-								<input class="filters-form-checkbox-item" type="checkbox" name="chocolate" checked>
-								шоколадные
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-checkbox-item" type="checkbox" name="sugar-topping" checked>
-								сахарные присыпки
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-checkbox-item" type="checkbox" name="fruits">
-								фрукты
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-checkbox-item" type="checkbox" name="syrups">
-								сиропы
-							</label>
-							<label class="filters-title-item">
-								<input class="filters-form-checkbox-item" type="checkbox" name="jams">
-								джемы
-							</label>
+						<div class="filters-form-checkbox-container">							
+							<input class="filters-form-checkbox-item" type="checkbox" id="chocolate" name="chocolate" checked>
+							<label class="filters-title-item-checkbox" for="chocolate">шоколадные</label>		
+							<input class="filters-form-checkbox-item" type="checkbox" id="sugar-topping" name="sugar-topping" checked>
+							<label class="filters-title-item-checkbox" for="sugar-topping">сахарные присыпки</label>	
+							<input class="filters-form-checkbox-item" type="checkbox" id="fruits" name="fruits">
+							<label class="filters-title-item-checkbox" for="fruits">фрукты</label>				
+							<input class="filters-form-checkbox-item" type="checkbox" id="syrups" name="syrups">
+							<label class="filters-title-item-checkbox" for="syrups">сиропы</label>				
+							<input class="filters-form-checkbox-item" type="checkbox" id="jams" name="jams">
+							<label class="filters-title-item-checkbox" for="jams">джемы</label>
 						</div>						   
 					</fieldset>
 					<button class="filters-button" type="submit">Применить</button>
@@ -194,7 +175,6 @@
 						</li>
 						<li class="catalog-item">
 							<article class="catalog-item-content">								
-								
 								<p class="catalog-item-image">
 								 	<a class="catalog-item-image-link" href="catalog-item.html">
 								 		<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -209,8 +189,7 @@
 							</article>						
 						</li>
 						<li class="catalog-item">
-							<article class="catalog-item-content">								 
-								
+							<article class="catalog-item-content">								
 								<p class="catalog-item-image">
 									<a class="catalog-item-image-link" href="catalog-item.html">
 										<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -225,8 +204,7 @@
 							</article>						
 						</li>
 						<li class="catalog-item">
-							<article class="catalog-item-content">								 
-									
+							<article class="catalog-item-content">										
 								<p class="catalog-item-image">									
 									<a class="catalog-item-image-link" href="catalog-item.html">
 										<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -241,8 +219,7 @@
 							</article>						
 						</li>
 						<li class="catalog-item">
-							<article class="catalog-item-content">								 
-								
+							<article class="catalog-item-content">								
 								<p class="catalog-item-image">									 
 									<a class="catalog-item-image-link" href="catalog-item.html">
 										<img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
@@ -257,8 +234,7 @@
 							</article>						
 						</li>
 						<li class="catalog-item">
-							<article class="catalog-item-content">								 
-									
+							<article class="catalog-item-content">										
 								<p class="catalog-item-image">
 									<a class="catalog-item-image-link" href="catalog-item.html">
 										<img src="img/product-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -273,8 +249,7 @@
 							</article>						
 						</li>
 						<li class="catalog-item">
-							<article class="catalog-item-content">								 
-								
+							<article class="catalog-item-content">								
 								<p class="catalog-item-image">									 
 									<a class="catalog-item-image-link" href="catalog-item.html">
 										<img src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -365,13 +340,15 @@
 						</li>					
 					</ul>				
 				<ul class="pagination-list">
-					<li class="pagination-item prev"><a href="#"><span class="visually-hidden">Перейти на предыдущую страницу</span>&lt;</a></li>
+					<li class="pagination-item prev"><a href="#"><span class="visually-hidden">Перейти на предыдущую страницу</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" transform='rotate(180)' viewBox="0 0 8 12"><path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+					</a></li>
 					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
 					<li class="pagination-item"><a href="#">4</a></li>
 					<li class="pagination-item"><a href="#">5</a></li>
-					<li class="pagination-item next"><a href="#"><span class="visually-hidden">Перейти на  следующую страницу</span>&gt;</a></li>
+					<li class="pagination-item next"><a href="#"><span class="visually-hidden">Перейти на  следующую страницу</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg></a></li>
 				</ul>
 			</section>
 		</main>
@@ -384,15 +361,11 @@
 	  				<li class="social-item"><a class="social-button social-button-vk" href="https://vk.com" aria-label="Перейти на страницу Gllacy Shop Вконтакте"><span class="visually-hidden">VK</span></a></li>
 	  			</ul>  			
 	  		</div>
-	  		<ul class="footer-navigation">
-		        <div class="footer-wrapper"> 
-		          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
-		          <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>
-		        </div>
-		        <div class="footer-wrapper">  			
-		    		<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
-		    		<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
-		        </div>
+	  		<ul class="footer-navigation">		         
+		        <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Для поставщиков</a></li>
+		        <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Наши документы</a></li>
+		        <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">О производстве</a></li>		    	
+		    	<li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>		         
 		  	</ul>
 	  		<p class="footer-copyright">
 	  			Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2018
