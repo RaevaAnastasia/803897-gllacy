@@ -779,6 +779,7 @@ input[type="radio"].visually-hidden {
 .slider-controls label:hover,
 .slider-controls label:focus {
 	background-color: rgba(248, 247, 244, 0.4);
+	outline: none;
 }
 
 
@@ -1283,6 +1284,44 @@ input[type="radio"].visually-hidden {
 
 /*Feedback*/
 
+@keyframes feedback-up {
+	0% {
+		transform: translateY(-2000px) scale(0,5);
+	}
+
+  	70% {
+  		transform: translateY(30px) scale(0.7);
+  	}
+
+  	90% {transform: translateY(-10px);
+  	}
+
+  	100% {transform: translateY(0) scale(1);
+  	}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .feedback {	
 	position: fixed;
 	top: 100px;
@@ -1357,7 +1396,15 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: center;	
 }
- 
+
+.feedback-show {
+	display: block;
+	animation: feedback-up 0.5s;
+}
+
+.feedback-error {
+  animation: shake 0.6s;
+}
 /*Inner page*/
 
 /*header*/
@@ -2071,7 +2118,7 @@ input[type="radio"].visually-hidden {
 .quick-view-button {
 	position: absolute;	 
 	top: 340px;
-	left: 30px;
+	left: 47px;
 
 	display: none;
 	width: 200px;
