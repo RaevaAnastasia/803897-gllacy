@@ -969,7 +969,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item:nth-child(3)::before {
-	left: -56px;
+	left: -57px;
 	top: -15px;
 
 	background-image: url(../img/feature-3.svg);
@@ -1101,21 +1101,21 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts img {	
-	position: absolute;
-	left: 0;
+	position: absolute;	 
 	top: 0;
+	left: 50%;
 	z-index: 1;
 
 	width: 1200px;
 	height: 430px;
-	margin-left: -27px;
+	margin-left: -600px;
 }
 
 .contacts iframe {
 	position: relative;
 	z-index: 2;
 
-	margin-left: -27px;
+	width: 100%;	
 
 	border: none;
 }
@@ -1123,14 +1123,15 @@ input[type="radio"].visually-hidden {
 .contacts-info {
 	position: absolute;
 	top: 63px;
-	right: 0;
+	left: 50%;
 	z-index: 3;
 
 
 	width: 302px;
 	min-height: 305px;	
-	padding: 30px 25px;
+	padding: 27px 23px;
 	box-sizing: border-box;
+	margin-left: 273px;
 
 	background-color: #ffffff;
 	border-radius: 15px;
@@ -1165,6 +1166,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	margin-top: 5px;
+	margin-bottom: 2px;
 
 	font-size: 18px;
 	line-height: 22px;
@@ -1174,13 +1176,14 @@ input[type="radio"].visually-hidden {
 .contacts-info-tel {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 35px;
+	margin-bottom: 33px;
 }
 
 .contacts-info .button {
 	width: 252px;
-	padding: 10px 23px;
+	padding: 10px 27px 12px 27px;
 	box-sizing: border-box;
+	border-radius: 25px;
 }
 
 /*Footer*/
@@ -1189,8 +1192,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0;	
-	padding-top: 25px;
-	padding-right: 25px;
+	padding-top: 24px;	
 	padding-bottom: 25px;
 
 	color: #ffffff;
@@ -1217,7 +1219,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 32px;
 	height: 32px;
-	margin-right: 12px;
+	margin-right: 10px;
 
 	border-radius: 50%;
 	border: 3px solid rgba(255, 255, 255, 0.5);
@@ -1261,7 +1263,8 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;	 
 	align-items: flex-start;
 	align-content: flex-start;
-	width: 305px;	
+	width: 305px;
+	padding-right: 14px;	
 }
 
 .footer-navigation-item {
@@ -1319,7 +1322,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright::before {
 	content: "";
 	position: absolute;
-	top: -35px;
+	top: -37px;
 	
 	width: 108px;
 	height: 39px;
