@@ -42,19 +42,20 @@
                         <li class="site-navigation-item"><a class="site-navigation-item-link" href="info.html" aria-label="Перейти в раздел О Компании">О Компании</a></li>
                     </ul>
                     <div class="main-header-wrapper">
-                        <section class="main-header-search" tabindex="0">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-                                <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-                            </svg>
-                            <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru">
+                        <div class="main-header-search" tabindex="0">
+                            <a class="main-header-search-link" href="search.html" aria-label="Перейти на страницу поиска">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                                    <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+                                </svg>
+                            </a>
+                            <form class="main-header-search-form dropdown" method="get" action="https://echo.htmlacademy.ru" tabindex="0">
                                 <p>
                                     <label class="visually-hidden" for="search-field">Поиск по сайту</label>
                                     <input class="main-header-search-form-field" id="search-field" type="search" name="search" placeholder="Что ищем?">
                                 </p>
                             </form>
-                        </section>
-                        <section class="main-header-login" tabindex="0">
-                            <h2 class="visually-hidden">Ваша учетная запись</h2>
+                        </div>
+                        <div class="main-header-login" tabindex="0">
                             <a class="main-header-login-link" href="login.html" aria-label="Перейти на страницу создания или входа учетной записи">Вход</a>
                             <form class="main-header-login-form dropdown" method="post" action="https://echo.htmlacademy.ru">
                                 <p class="main-header-login-field">
@@ -71,8 +72,8 @@
                                     <a class="main-header-login-info-check-in" href="#">Новая регистрация</a>
                                 </p>
                             </form>
-                        </section>
-                        <span class="main-header-basket">Пусто</span>
+                        </div>
+                        <div class="main-header-basket"><a class="main-header-basket-link" href="basket.html" aria-label="Перейти в корзину">Пусто</a></div>
                     </div>
                 </nav>
                 <p class="work-time">
@@ -197,17 +198,19 @@
                         <h2 class="news-preview-title">Новое в нашем блоге</h2>
                         <a class="news-preview-link" href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
                     </section>
-                    <section class="subscribtion">
-                        <h2 class="visually-hidden">Подписка на рассылку</h2>
-                        <p class="subscribtion-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                        <form class="subscribtion-form" method="post" action="https://echo.htmlacademy.ru">
-                            <p class="subscribtion-form-email">
-                                <label class="visually-hidden" for="subscribtion-email">Введите электронную почту</label>
-                                <input class="subscribtion-field-email" id="subscribtion-email" type="email" name="subscribtion-email" placeholder="Электронная почта">
-                            </p>
-                            <button class="button" type="submit">Отправить</button>
-                        </form>
-                    </section>
+                    <div class="subscribtion-wrapper">
+                        <section class="subscribtion">
+                            <h2 class="visually-hidden">Подписка на рассылку</h2>
+                            <p class="subscribtion-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                            <form class="subscribtion-form" method="post" action="https://echo.htmlacademy.ru">
+                                <p class="subscribtion-form-email">
+                                    <label class="visually-hidden" for="subscribtion-email">Введите электронную почту</label>
+                                    <input class="subscribtion-field-email" id="subscribtion-email" type="email" name="subscribtion-email" placeholder="Электронная почта">
+                                </p>
+                                <button class="button" type="submit">Отправить</button>
+                            </form>
+                        </section>
+                    </div>
                 </div>
             </main>
         </div>
@@ -235,6 +238,9 @@
                 <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="#">Экологические стандарты</a></li>
             </ul>
             <p class="footer-copyright">
+                <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на страницу интенсива Профессиональный онлайн‑курс HTML и CSS, уровень 1"> 
+                <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+                </a>
                 Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2018
             </p>
         </footer>
@@ -256,7 +262,7 @@
                 <button class="button" type="submit">Отправить</button>
             </form>
             <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
-        </section>        
+        </section>
         <script src="js/script.min.js"></script>     
     </body>
 </html>
