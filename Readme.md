@@ -1,6 +1,12 @@
-# Личный проект «Глейси»
+# Личный проект «GllacyShop»
 
+GllacyShop - двустраничный интернет-магазин мороженого.
+
+* Главная страница:
 ![](https://github.com/RaevaAnastasia/GllacyShop/blob/master/img/Screenshot%202019-08-29%20at%2014.25.38.png)
+
+
+* Страница каталога "Сливочное мороженное":
 ![](https://github.com/RaevaAnastasia/GllacyShop/blob/master/img/Screenshot%202019-08-29%20at%2014.31.03.png)
 
 
