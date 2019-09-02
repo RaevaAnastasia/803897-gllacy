@@ -1,8 +1,7 @@
 # Личный проект «GllacyShop»
 
-GllacyShop - двустраничный интернет-магазин мороженого.
+[GllacyShop](https://raevaanastasia.github.io/GllacyShop/) - двустраничный интернет-магазин мороженого.
 
-[GitHub Pages GllacyShop](https://raevaanastasia.github.io/GllacyShop/)
 
 * Главная страница:
 ![](https://github.com/RaevaAnastasia/GllacyShop/blob/master/img/Screenshot%202019-08-29%20at%2014.25.38.png)
